@@ -1,0 +1,36 @@
+{
+  "app": {
+    "name": "M.K",
+    "theme": "cyberpunk_neon",
+    "language": "ar_en",
+    "max_concurrency": 15,
+    "log_level": "INFO",
+    "log_dir": "logs",
+    "data_dir": "data"
+  },
+  "opsec": {
+    "use_proxy": false,
+    "proxy_url": "socks5h://127.0.0.1:9050",
+    "timeout_seconds": 12.0,
+    "rate_limit_delay_ms": 250,
+    "jitter_ms": 150,
+    "max_retries": 2,
+    "respect_retry_after": true
+  },
+  "mena": {
+    "default_region": "EG",
+    "priority_countries": [
+      "EG", "SA", "AE", "KW", "QA", "BH", "OM",
+      "JO", "LB", "IQ", "PS", "IL", "MA", "DZ", "TN"
+    ],
+    "enable_optional_academic_gov_dorks": false
+  },
+  "ai": {
+    "enabled": false,
+    "provider": "null",
+    "model_name": "qwen2.5:3b",
+    "endpoint": "http://127.0.0.1:11434",
+    "vector_db_path": "data/vector_store",
+    "auto_index_results": true
+  }
+}
