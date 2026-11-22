@@ -1,0 +1,1046 @@
+[
+  {
+    "name": "Telegram",
+    "category": "01_social_open",
+    "url_template": "https://t.me/{target}",
+    "detection_mode": "text_match",
+    "found_markers": [
+      "tgme_page_title"
+    ],
+    "not_found_markers": [
+      "if you have telegram, you can contact @"
+    ]
+  },
+  {
+    "name": "TikTok",
+    "category": "01_social_open",
+    "url_template": "https://www.tiktok.com/@{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "couldn't find this account"
+    ]
+  },
+  {
+    "name": "Snapchat",
+    "category": "01_social_open",
+    "url_template": "https://www.snapchat.com/add/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "sorry, we couldn't find"
+    ]
+  },
+  {
+    "name": "Reddit",
+    "category": "01_social_open",
+    "url_template": "https://www.reddit.com/user/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "nobody on reddit goes by that name"
+    ]
+  },
+  {
+    "name": "Pinterest",
+    "category": "01_social_open",
+    "url_template": "https://www.pinterest.com/{target}/",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "user not found"
+    ]
+  },
+  {
+    "name": "Quora",
+    "category": "01_social_open",
+    "url_template": "https://www.quora.com/profile/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "page not found"
+    ]
+  },
+  {
+    "name": "Threads",
+    "category": "01_social_open",
+    "url_template": "https://www.threads.net/@{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "sorry, this page isn't available"
+    ]
+  },
+  {
+    "name": "Tumblr",
+    "category": "01_social_open",
+    "url_template": "https://{target}.tumblr.com/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "VK",
+    "category": "01_social_open",
+    "url_template": "https://vk.com/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "page not found"
+    ]
+  },
+  {
+    "name": "Mastodon",
+    "category": "01_social_open",
+    "url_template": "https://mastodon.social/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Facebook (Passive Dork)",
+    "category": "02_social_protected_dorks",
+    "url_template": "https://www.google.com/search?q=site:facebook.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Instagram (Passive Dork)",
+    "category": "02_social_protected_dorks",
+    "url_template": "https://www.google.com/search?q=site:instagram.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "X / Twitter (Passive Dork)",
+    "category": "02_social_protected_dorks",
+    "url_template": "https://www.google.com/search?q=(site:x.com+OR+site:twitter.com)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "LinkedIn (Passive Dork)",
+    "category": "02_social_protected_dorks",
+    "url_template": "https://www.google.com/search?q=site:linkedin.com/in/+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "WhatsApp Public Mentions (Dork)",
+    "category": "02_social_protected_dorks",
+    "url_template": "https://www.google.com/search?q=(site:wa.me+OR+site:chat.whatsapp.com)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Truecaller Web Mentions (Dork)",
+    "category": "02_social_protected_dorks",
+    "url_template": "https://www.google.com/search?q=site:truecaller.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Tango Live",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://tango.me/profile/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "page not found"
+    ]
+  },
+  {
+    "name": "Timo App (Passive Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=(%22timo%22+OR+%22تيمو%22)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Xena Live / زينا (Passive Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=(%22xena+live%22+OR+%22زينا%22)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Bigo Live",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.bigo.tv/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "not found"
+    ]
+  },
+  {
+    "name": "Likee",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://likee.video/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Kwai",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.kwai.com/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Yalla Live / يلا (Passive Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=(site:yallalive.com+OR+%22yalla+ludo%22)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "SoulChill (Passive Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=%22soulchill%22+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Hago (Passive Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=%22hago%22+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Uplive (Passive Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=site:up.live+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Clubhouse",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.clubhouse.com/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Kick",
+    "category": "04_gaming_streamers",
+    "url_template": "https://kick.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Twitch",
+    "category": "04_gaming_streamers",
+    "url_template": "https://www.twitch.tv/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "YouTube",
+    "category": "04_gaming_streamers",
+    "url_template": "https://www.youtube.com/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Trovo",
+    "category": "04_gaming_streamers",
+    "url_template": "https://trovo.live/s/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Nimo TV",
+    "category": "04_gaming_streamers",
+    "url_template": "https://www.nimo.tv/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Dailymotion",
+    "category": "04_gaming_streamers",
+    "url_template": "https://www.dailymotion.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Steam",
+    "category": "05_gaming_platforms",
+    "url_template": "https://steamcommunity.com/id/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "the specified profile could not be found"
+    ]
+  },
+  {
+    "name": "Roblox",
+    "category": "05_gaming_platforms",
+    "url_template": "https://www.roblox.com/user.aspx?username={target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Xbox Gamertag (Dork)",
+    "category": "05_gaming_platforms",
+    "url_template": "https://www.google.com/search?q=site:xboxgamertag.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "PlayStation PSNProfiles",
+    "category": "05_gaming_platforms",
+    "url_template": "https://psnprofiles.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Epic Games / Fortnite Tracker",
+    "category": "05_gaming_platforms",
+    "url_template": "https://fortnitetracker.com/profile/all/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Minecraft NameMC",
+    "category": "05_gaming_platforms",
+    "url_template": "https://namemc.com/profile/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "PUBG OP.GG",
+    "category": "05_gaming_platforms",
+    "url_template": "https://pubg.op.gg/user/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Faceit",
+    "category": "05_gaming_platforms",
+    "url_template": "https://www.faceit.com/en/players/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Chess.com",
+    "category": "05_gaming_platforms",
+    "url_template": "https://www.chess.com/member/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Lichess",
+    "category": "05_gaming_platforms",
+    "url_template": "https://lichess.org/@/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Itch.io",
+    "category": "05_gaming_platforms",
+    "url_template": "https://{target}.itch.io/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Speedrun.com",
+    "category": "05_gaming_platforms",
+    "url_template": "https://www.speedrun.com/users/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Tellonym",
+    "category": "06_anonymous_qa",
+    "url_template": "https://tellonym.me/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "CuriousCat",
+    "category": "06_anonymous_qa",
+    "url_template": "https://curiouscat.live/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Ask.fm",
+    "category": "06_anonymous_qa",
+    "url_template": "https://ask.fm/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "NGL Link (Passive Dork)",
+    "category": "06_anonymous_qa",
+    "url_template": "https://www.google.com/search?q=site:ngl.link+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Sarahah (Passive Dork)",
+    "category": "06_anonymous_qa",
+    "url_template": "https://www.google.com/search?q=site:sarahah.pro+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Amazon Egypt (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:amazon.eg+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Amazon Saudi (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:amazon.sa+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Amazon UAE (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:amazon.ae+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Amazon Global (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:amazon.com/gp/profile+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Noon / نون (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:noon.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Alibaba (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:alibaba.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "AliExpress (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:aliexpress.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Jumia / جوميا (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:jumia.com.eg+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Temu (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:temu.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Shein (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:shein.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "eBay",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.ebay.com/usr/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "the user id you entered was not found"
+    ]
+  },
+  {
+    "name": "Etsy",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.etsy.com/people/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Salla / سلة (Saudi Store)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://salla.sa/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Zid / زد (Saudi Store Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:zid.store+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Haraj / حراج (Saudi)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://haraj.com.sa/users/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Dubizzle Egypt (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:dubizzle.com.eg+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Dubizzle UAE (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:dubizzle.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "OpenSooq / السوق المفتوح (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:opensooq.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Mstaml / مستعمل (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:mstaml.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Mourjan / مرجان (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:mourjan.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Yad2 Israel (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:yad2.co.il+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Avito Morocco (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:avito.ma+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Ouedkniss Algeria (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:ouedkniss.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Khamsat / خمسات",
+    "category": "09_freelance_jobs",
+    "url_template": "https://khamsat.com/user/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "الصفحة غير موجودة"
+    ]
+  },
+  {
+    "name": "Mostaql / مستقل",
+    "category": "09_freelance_jobs",
+    "url_template": "https://mostaql.com/u/{target}",
+    "detection_mode": "status_code",
+    "not_found_markers": [
+      "الصفحة غير موجودة"
+    ]
+  },
+  {
+    "name": "Nafezly / نفذلي",
+    "category": "09_freelance_jobs",
+    "url_template": "https://nafezly.com/u/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Kafiil / كفيل",
+    "category": "09_freelance_jobs",
+    "url_template": "https://kafiil.com/u/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Bahr / بحر (Saudi Dork)",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.google.com/search?q=site:bahr.sa+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Hsoub I/O / حسوب",
+    "category": "09_freelance_jobs",
+    "url_template": "https://io.hsoub.com/u/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Wuzzuf / وظف (Egypt Dork)",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.google.com/search?q=site:wuzzuf.net+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Bayt / بيت.كوم (Dork)",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.google.com/search?q=site:bayt.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Forasna / فرصنا (Dork)",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.google.com/search?q=site:forasna.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Fiverr",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.fiverr.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Freelancer.com",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.freelancer.com/u/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Upwork (Dork)",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.google.com/search?q=site:upwork.com/freelancers+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Behance",
+    "category": "10_design_creative",
+    "url_template": "https://www.behance.net/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Dribbble",
+    "category": "10_design_creative",
+    "url_template": "https://dribbble.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "DeviantArt",
+    "category": "10_design_creative",
+    "url_template": "https://www.deviantart.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "ArtStation",
+    "category": "10_design_creative",
+    "url_template": "https://www.artstation.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Flickr",
+    "category": "10_design_creative",
+    "url_template": "https://www.flickr.com/people/{target}/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "500px",
+    "category": "10_design_creative",
+    "url_template": "https://500px.com/p/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Unsplash",
+    "category": "10_design_creative",
+    "url_template": "https://unsplash.com/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Vimeo",
+    "category": "10_design_creative",
+    "url_template": "https://vimeo.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "GitHub",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://github.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "GitLab",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://gitlab.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Bitbucket",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://bitbucket.org/{target}/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Codeforces",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://codeforces.com/profile/{target}",
+    "detection_mode": "redirect",
+    "redirect_not_found_substrings": [
+      "codeforces.com/?"
+    ]
+  },
+  {
+    "name": "LeetCode",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://leetcode.com/u/{target}/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Kaggle",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://www.kaggle.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "TryHackMe",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://tryhackme.com/p/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "HackTheBox (Dork)",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://www.google.com/search?q=site:app.hackthebox.com/profile+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Dev.to",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://dev.to/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Medium",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://medium.com/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "ADSLGate / البوابة الرقمية (Dork)",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://www.google.com/search?q=site:adslgate.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "FXP Israel (Dork)",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://www.google.com/search?q=site:fxp.co.il+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Anghami / أنغامي (Dork)",
+    "category": "12_audio_music",
+    "url_template": "https://www.google.com/search?q=site:play.anghami.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "SoundCloud",
+    "category": "12_audio_music",
+    "url_template": "https://soundcloud.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Spotify",
+    "category": "12_audio_music",
+    "url_template": "https://open.spotify.com/user/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Mixcloud",
+    "category": "12_audio_music",
+    "url_template": "https://www.mixcloud.com/{target}/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Last.fm",
+    "category": "12_audio_music",
+    "url_template": "https://www.last.fm/user/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Bandcamp",
+    "category": "12_audio_music",
+    "url_template": "https://{target}.bandcamp.com/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Genius",
+    "category": "12_audio_music",
+    "url_template": "https://genius.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Goodreads",
+    "category": "13_books_anime_media",
+    "url_template": "https://www.goodreads.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Abjjad / أبجد (Dork)",
+    "category": "13_books_anime_media",
+    "url_template": "https://www.google.com/search?q=site:abjjad.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Wattpad",
+    "category": "13_books_anime_media",
+    "url_template": "https://www.wattpad.com/user/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "MyAnimeList",
+    "category": "13_books_anime_media",
+    "url_template": "https://myanimelist.net/profile/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "AniList",
+    "category": "13_books_anime_media",
+    "url_template": "https://anilist.co/user/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Letterboxd",
+    "category": "13_books_anime_media",
+    "url_template": "https://letterboxd.com/{target}/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Trakt",
+    "category": "13_books_anime_media",
+    "url_template": "https://trakt.tv/users/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Linktree",
+    "category": "14_link_in_bio",
+    "url_template": "https://linktr.ee/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Beacons",
+    "category": "14_link_in_bio",
+    "url_template": "https://beacons.ai/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Bio.link",
+    "category": "14_link_in_bio",
+    "url_template": "https://bio.link/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Bento.me",
+    "category": "14_link_in_bio",
+    "url_template": "https://bento.me/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Carrd",
+    "category": "14_link_in_bio",
+    "url_template": "https://{target}.carrd.co/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "About.me",
+    "category": "14_link_in_bio",
+    "url_template": "https://about.me/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Gravatar",
+    "category": "14_link_in_bio",
+    "url_template": "https://gravatar.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Solo.to",
+    "category": "14_link_in_bio",
+    "url_template": "https://solo.to/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Google Scholar (Optional Dork)",
+    "category": "15_academic_public_dorks",
+    "url_template": "https://scholar.google.com/scholar?q=%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "ResearchGate (Optional Dork)",
+    "category": "15_academic_public_dorks",
+    "url_template": "https://www.google.com/search?q=site:researchgate.net+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "ORCID (Optional Dork)",
+    "category": "15_academic_public_dorks",
+    "url_template": "https://www.google.com/search?q=site:orcid.org+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "EKB / بنك المعرفة (Optional Dork)",
+    "category": "15_academic_public_dorks",
+    "url_template": "https://www.google.com/search?q=site:ekb.eg+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "MENA Edu Portals (Optional Dork)",
+    "category": "15_academic_public_dorks",
+    "url_template": "https://www.google.com/search?q=(site:.edu.eg+OR+site:.edu.sa+OR+site:.ac.ae+OR+site:.ac.il)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "MENA Public Gov Docs (Optional Dork)",
+    "category": "15_academic_public_dorks",
+    "url_template": "https://www.google.com/search?q=(site:.gov.eg+OR+site:.gov.sa+OR+site:.gov.ae+OR+site:.gov.il)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Bluesky",
+    "category": "01_social_open",
+    "url_template": "https://bsky.app/profile/{target}.bsky.social",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Telegram Stat / TGStat (Dork)",
+    "category": "01_social_open",
+    "url_template": "https://www.google.com/search?q=site:tgstat.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "MeWe",
+    "category": "01_social_open",
+    "url_template": "https://mewe.com/i/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Snapchat Spotlight (Dork)",
+    "category": "02_social_protected_dorks",
+    "url_template": "https://www.google.com/search?q=site:snapchat.com/spotlight+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Discord Public Invites (Dork)",
+    "category": "02_social_protected_dorks",
+    "url_template": "https://www.google.com/search?q=(site:discord.gg+OR+site:discord.com/invite)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Mico Live (Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=%22mico+live%22+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "YoHo Voice Chat (Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=%22yoho%22+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Ahlan Chat / أهلاً (Dork)",
+    "category": "03_live_streaming_chat",
+    "url_template": "https://www.google.com/search?q=(%22ahlan%22+OR+%22أهلا+دردشة%22)+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Rumble",
+    "category": "04_gaming_streamers",
+    "url_template": "https://rumble.com/user/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Bilibili",
+    "category": "04_gaming_streamers",
+    "url_template": "https://space.bilibili.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Valorant Tracker.gg",
+    "category": "05_gaming_platforms",
+    "url_template": "https://tracker.gg/valorant/profile/riot/{target}/overview",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "League of Legends OP.GG (Dork)",
+    "category": "05_gaming_platforms",
+    "url_template": "https://www.google.com/search?q=site:op.gg/summoners+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Call of Duty Tracker (Dork)",
+    "category": "05_gaming_platforms",
+    "url_template": "https://www.google.com/search?q=site:cod.tracker.gg+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Osu!",
+    "category": "05_gaming_platforms",
+    "url_template": "https://osu.ppy.sh/users/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Retrospring",
+    "category": "06_anonymous_qa",
+    "url_template": "https://retrospring.net/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Talabat / طلبات (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:talabat.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Elmenus / المنيوز (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:elmenus.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Zap Israel Shopping (Dork)",
+    "category": "07_ecommerce_shopping",
+    "url_template": "https://www.google.com/search?q=site:zap.co.il+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Hatla2ee / هتلاقي سيارات (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:eg.hatla2ee.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Aqarmap / عقارماب (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:aqarmap.com.eg+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Tayara Tunisia (Dork)",
+    "category": "08_mena_classifieds",
+    "url_template": "https://www.google.com/search?q=site:tayara.tn+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Baeed / بعيد (Dork)",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.google.com/search?q=site:baeed.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Tanqeeb / تنقيب (Dork)",
+    "category": "09_freelance_jobs",
+    "url_template": "https://www.google.com/search?q=site:tanqeeb.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Sketchfab",
+    "category": "10_design_creative",
+    "url_template": "https://sketchfab.com/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "CodePen",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://codepen.io/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Replit",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://replit.com/@{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "HuggingFace",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://huggingface.co/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "PyPI",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://pypi.org/user/{target}/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "npm",
+    "category": "11_dev_tech_forums",
+    "url_template": "https://www.npmjs.com/~{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "ElCinema / السينما.كوم (Dork)",
+    "category": "13_books_anime_media",
+    "url_template": "https://www.google.com/search?q=site:elcinema.com+%22{target}%22",
+    "detection_mode": "passive_dork"
+  },
+  {
+    "name": "Substack",
+    "category": "13_books_anime_media",
+    "url_template": "https://{target}.substack.com/",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Link.me",
+    "category": "14_link_in_bio",
+    "url_template": "https://link.me/{target}",
+    "detection_mode": "status_code"
+  },
+  {
+    "name": "Taplink",
+    "category": "14_link_in_bio",
+    "url_template": "https://taplink.cc/{target}",
+    "detection_mode": "status_code"
+  }
+]

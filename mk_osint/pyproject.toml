@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mk-osint"
+version = "3.0.0"
+description = "M.K v2.2 — Cyberpunk 15-Phase MENA OSINT Intelligence Framework for Kali Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13.7.0",
+    "textual>=0.70.0",
+    "httpx[socks]>=0.27.0",
+    "dnspython>=2.6.0",
+    "phonenumbers>=8.13.0",
+    "Pillow>=10.0.0",
+    "pypdf>=4.0.0",
+]
+
+[project.scripts]
+mk-osint = "mk:main"
